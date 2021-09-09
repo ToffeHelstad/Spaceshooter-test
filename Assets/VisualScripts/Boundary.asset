@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Boundary
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Boundary","summary":"Limits
+      player movement to screen","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Boundary","$type":"System.String"},"object":null},"position":{"x":-388.0,"y":-89.0},"guid":"0b8ea2b3-ec41-4e92-b012-58ff03b50f43","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"9"},{"type":"UnityEngine.Rect","instance":true,"static":false,"defaultValues":{"target":{"xMin":0.0,"yMin":0.0,"xMax":0.0,"yMax":0.0,"$type":"UnityEngine.Rect"}},"position":{"x":-125.0,"y":-170.0},"guid":"a06f4ce0-db7c-4ced-bba8-f582aff1abcb","$version":"A","$type":"Unity.VisualScripting.Expose","$id":"11"},{"sourceUnit":{"$ref":"9"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"b231a5aa-163f-4deb-8fab-c517e81dcb46","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
