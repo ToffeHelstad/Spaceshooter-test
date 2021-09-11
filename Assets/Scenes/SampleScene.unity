@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686264222}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
   m_Name: 
@@ -2004,6 +2004,8 @@ GameObject:
   - component: {fileID: 1419393315}
   - component: {fileID: 1419393316}
   - component: {fileID: 1419393314}
+  - component: {fileID: 1419393318}
+  - component: {fileID: 1419393317}
   m_Layer: 0
   m_Name: DeathTriggers
   m_TagString: Border
@@ -2018,7 +2020,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419393313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2076,6 +2078,37 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1419393317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419393313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 079810eac0e9c8749a2883f38b49a2a6, type: 2}
+--- !u!114 &1419393318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419393313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &1465443805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2588,8 @@ GameObject:
   - component: {fileID: 1812697175}
   - component: {fileID: 1812697178}
   - component: {fileID: 1812697177}
+  - component: {fileID: 1812697179}
+  - component: {fileID: 1812697176}
   m_Layer: 0
   m_Name: DeathTrigger (1)
   m_TagString: Border
@@ -2576,6 +2611,27 @@ Transform:
   m_Father: {fileID: 1419393315}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1812697176
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812697174}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!23 &1812697177
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2626,6 +2682,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812697174}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!61 &1812697179
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812697174}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.6784339, y: -4.639267}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 11.90039, y: 0.77369356}
+  m_EdgeRadius: 0
 --- !u!1 &1812983342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,7 +2859,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055949656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.39, z: 0}
+  m_LocalPosition: {x: 0, y: -1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 686264223}
@@ -2813,10 +2895,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"MovementSpeed","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"MaxY","value":{"$content":4.5,"$type":"System.Single"},"$version":"A"},{"name":"Variable","value":{"$content":"1","$type":"System.String"},"$version":"A"},{"name":"TimeofFire","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"FireRate2","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"RotateZ+","value":{"$content":-75.0,"$type":"System.Single"},"$version":"A"},{"name":"Boundary","value":{"xMin":5.28,"yMin":3.0,"xMax":17.28,"yMax":15.0,"$type":"UnityEngine.Rect"},"$version":"A"},{"name":"RotateZ-","value":{"$content":75.0,"$type":"System.Single"},"$version":"A"},{"name":"HealthPoints","value":{"$content":3,"$type":"System.Int32"},"$version":"A"},{"name":"ExplosionEffect","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"ExplosionSFX","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"MovementSpeed","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"MaxY","value":{"$content":4.5,"$type":"System.Single"},"$version":"A"},{"name":"Variable","value":{"$content":"1","$type":"System.String"},"$version":"A"},{"name":"TimeofFire","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"FireRate2","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"RotateZ+","value":{"$content":-75.0,"$type":"System.Single"},"$version":"A"},{"name":"Boundary","value":{"xMin":5.28,"yMin":3.0,"xMax":17.28,"yMax":15.0,"$type":"UnityEngine.Rect"},"$version":"A"},{"name":"RotateZ-","value":{"$content":75.0,"$type":"System.Single"},"$version":"A"},{"name":"HealthPoints","value":{"$content":3,"$type":"System.Int32"},"$version":"A"},{"name":"ExplosionEffect","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"ExplosionSFX","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"MouseBox","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 4375431670160757819, guid: 7783291920b1b2f4ea97dd861d787b12, type: 3}
     - {fileID: 8300000, guid: 05ceb60aadeb44d4b8771c8d0dd81a62, type: 3}
+    - {fileID: 767871104}
 --- !u!61 &2055949662
 BoxCollider2D:
   m_ObjectHideFlags: 0
